@@ -1,0 +1,78 @@
+/* Side Navigation */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #343a40;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f8f9fa;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #343a40;
+    border: none;
+    padding: 10px 15px;
+}
+
+.openbtn:hover {
+    color: #007bff;
+}
+
+.main {
+    transition: margin-left .5s;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Meal Card */
+.meal-card {
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+}
+
+.meal-card:hover {
+    transform: scale(1.05);
+}
+
+.meal-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Meal Details */
+#meal-details img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 16px;}
+}
